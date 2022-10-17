@@ -1,0 +1,22 @@
+
+
+Test Case Design Techniques
+
+we don't use test case design techniques for all function in the user story
+we use that for if there is some function require some data like number or letter that time we need to use test case design techniques
+
+in test case design techniques we have 2 steps
+
+1) Equivalence class partitioning (ECP)
+   here we check positive and negative (valid and invalid) data.
+   so here we give between numbers or alphabet like between 1 and 100 or let say alphabet should be max 10 letters so it should be alphabet<10
+   and if we give less than 1 or bigger than 100 this are invalid data  or spacial character
+
+2) Boundary value analysis(BVA)
+   here we give exact data like
+   valid data min number we give 1 max number we give 99
+   or data we give 50 this exact number are valid data and we call (BVA)  or alphabet like 5 letter asdgg
+
+   and invalid one is we give 150 or we write 15 letter asdfdfadsfdasdv so this are exact data
+
+

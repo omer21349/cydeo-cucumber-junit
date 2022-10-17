@@ -1,0 +1,62 @@
+public LoginPage{
+
+   LoginPage(){
+     PageFactory.initElement(Driver.getDriver,this)
+
+   }
+
+  @FindBy(id='omer')
+  public WebElement usernameInput;
+
+
+
+}
+
+
+@CucumberOptions(
+               feature= "featureFile_Path",
+               glue= "StapDefinition_Path",
+               tage= "login"
+
+                 )
+public CuckeRunner.class{
+
+
+
+}
+
+
+public Login_StapDefinitions{
+  LoginPage loginPage= new LoginPage();
+
+  @When("As a user go to the login page")
+  public void as_a_user_go_tothe_login_page(){
+   login.usernameInput.sentKey("Omer");
+
+ }
+
+
+
+}
+
+
+
+public Login_FeatureFile{
+
+    Feature: Bally's login feature.
+
+
+   @login
+   Scenario: Verify login feature working as a expected.
+          When As a user go to the login page
+          And  Enter the "<username>" and "<password>"
+          And Click the login button
+          Then Verify customer home page displayed
+
+
+}
+
+
+
+
+
